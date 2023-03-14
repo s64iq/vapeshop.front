@@ -1,0 +1,87 @@
+body {
+  overflow-x: hidden;
+  margin: 0 auto;
+  background: white;
+  user-select: none;
+}
+.profile-page-main {
+  flex: 1 1 auto;
+  display: grid;
+  justify-content: center;
+  font-family: system-ui;
+}
+.profile-page-title {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-page-title-page-name {
+  height: 100%;
+  width: 180px;
+  font-size: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui;
+}
+.profile-page-title-nav {
+  height: 100%;
+  width: 1000px;
+}
+.profile-page-main-user-profile-block {
+  font-family: system-ui;
+  height: 750px;
+  width: 1180px;
+  border-radius: 5px;
+  flex: 1 1 auto;
+  justify-content: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.change-password-model {
+  padding: 15px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.change-password-enter-model {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.change-password-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: bottom;
+}
+.change-password-input-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: bottom;
+}
+.change-password-input {
+}
+.profile-notification-modal {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  float: bottom;
+  background-color: #ffb5b2;
+  border: 2px solid #ff6363;
+  border-radius: 4px;
+}
+.profile-notification-modal-text {
+
+}
+.change-password-notification-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: bottom;
+}
+
+

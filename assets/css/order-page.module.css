@@ -1,0 +1,167 @@
+body {
+  margin: 0 auto;
+  background: white;
+  user-select: none;
+}
+.order-page-main {
+  flex: 1 1 auto;
+  display: grid;
+  justify-content: center;
+  font-family: system-ui;
+}
+.order-page-title {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.order-page-title-page-name {
+  height: 100%;
+  width: 180px;
+  font-size: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui;
+}
+.order-page-title-nav {
+  height: 100%;
+  width: 1000px;
+}
+.order-page-orders-block {
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: grid;
+  border-radius: 5px;
+}
+.order-page-orders-properties {
+  height: 50px;
+  display: flex;
+}
+.order-page-product-name-property {
+  width: 660px;
+  height: 100%;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.order-page-product-price-property {
+  width: 103px;
+  height: 100%;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.order-page-product-count-property {
+  width: 140px;
+  height: 100%;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.order-page-product-sum-property {
+  width: 135px;
+  height: 100%;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-page-product-column {
+  height: 70px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  float: left;
+  justify-content: center;
+  border-radius: 5px;
+  margin-bottom: 7px;
+}
+.order-page-product-photo {
+  width: 80px;
+  height: 100%;
+  float: left;
+  margin-left: 15px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.order-page-product-name {
+  cursor: pointer;
+  width: 535px;
+  height: 100%;
+  display: flex;
+  margin-left: 15px;
+  align-items: center;
+  font-size: 16px;
+  float: left;
+}
+
+.order-page-product-price {
+  text-align: right;
+  font-weight: bold;
+  font-size: 15px;
+  width: 138px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
+.order-page-product-counter {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
+.order-page-product-count-minus {
+  float: left;
+  font-weight: bold;
+  font-size: 24px;
+  cursor: pointer;
+}
+.order-page-product-count {
+  float: left;
+  font-weight: bold;
+}
+.order-page-product-count-plus {
+  float: left;
+  font-weight: bold;
+  font-size: 24px;
+  cursor: pointer;
+}
+.order-page-total-product-price {
+  font-weight: bold;
+  font-size: 15px;
+  width: 180px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
+.order-page-delete-product-btn {
+  width: 60px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  cursor: pointer;
+}
+.order-page-total-products-price {
+  height: 60px;
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

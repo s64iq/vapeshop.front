@@ -1,0 +1,40 @@
+body {
+  margin: 0 auto;
+  background: white;
+  user-select: none;
+}
+.main-page-main {
+  flex: 1 1 auto;
+  display: grid;
+  justify-content: center;
+  font-family: system-ui;
+}
+.main-page-title {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-page-title-page-name {
+  height: 100%;
+  width: 180px;
+  font-size: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui;
+}
+.main-page-title-nav {
+  height: 100%;
+  width: 1000px;
+}
+.main-page-main-new-event-block {
+  font-family: system-ui;
+  height: 750px;
+  width: 1180px;
+  border-radius: 5px;
+  flex: 1 1 auto;
+  justify-content: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}

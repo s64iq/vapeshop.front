@@ -1,0 +1,122 @@
+header {
+  height: 100%;
+  width: 100%;
+  display: contents;
+  font-family: system-ui;
+  background-color: #f9f9f9;
+}
+
+/*HEADER TOP*/
+.header-top {
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+.header-info-panel {
+  height: 45px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dadada;
+}
+.header-nav {
+  height: 100%;
+  width: 1300px;
+}
+
+/*HEADER AUTH PANEL*/
+.header-auth-panel {
+  height: 100%;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.header-auth-panel-dropdown {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  position: relative;
+}
+.header-auth-panel-dropdown-dropbtn {
+  height: 100%;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: black;
+  background-color: #dadada;
+}
+.header-auth-panel-dropdown-dropbtn:hover {
+  background-color: #c0c0c0;
+}
+.header-auth-panel-dropdown-content {
+  height: 88px;
+  width: 200px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-top: 8px;
+  position: absolute;
+  float: bottom;
+  z-index: 1;
+  background-color: #dadada;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.header-auth-panel-dropdown-content-btn {
+  height: 40px;
+  width: 100%;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.header-auth-panel-dropdown-content-btn:hover, header-auth-panel-dropdown-content-btn:focus {
+  background-color: #c0c0c0;
+}
+
+/*HEADER MIDDLE*/
+.header-middle {
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-logo {
+  height: 100%;
+  width: 1204px;
+}
+.header-order {
+  height: 75px;
+  width: 75px;
+  cursor: pointer;
+}
+
+/*HEADER BOTTOM*/
+.header-bottom {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*HEADER CATEGORY SELECTOR*/
+.header-category-selector {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+.header-category-selector-button {
+  padding: 17px;
+  padding-right: 62px;
+  padding-left: 62px;
+  float: left;
+  cursor: pointer;
+  font-size: 16px;
+  color: black;
+  border: 1px solid rgba(126, 126, 126, 0.78);
+}
