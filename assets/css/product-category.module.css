@@ -313,6 +313,7 @@ input::-webkit-inner-spin-button {
   color: rgba(128, 128, 128, 0);
   background-color: white;
   font-size: 1em;
+  list-style-type: none;
 }
 .pagination li.pagination-active {
   background-color: green;
