@@ -43,7 +43,7 @@
                 <input class="change-password-input">
                 <button class="change-password-btn" @click="changePassword">Send</button>
               </div>
-              <div class="profile-notification-modal" v-if="invalidPasswordModal !== false">
+              <div class="profile-notification-modal" v-if="passwordNotificationModal !== false">
                 <div class="profile-notification-modal-text" v-for="(item,index) in notification.split(';')">
                   {{item}}
                 </div>
@@ -54,66 +54,23 @@
       </div>
     </main>
 
-    <footer/>
+    <default_footer/>
   </div>
 </template>
 
 <script>
 import style from '/assets/css/profile-page.module.css';
-import footer from '/assets/css/global/footer.module.css';
 import Default_header from "./global/header/default_header";
+import Default_footer from "./global/footer/default_footer";
 export default {
-  components: {Default_header},
+  components: {Default_footer, Default_header},
   middleware: 'auth',
-  name: "user",
+
   data() {
     return {
       Data: [],
-      changePasswordModel: false,
-      invalidPasswordModal: false,
+      passwordNotificationModal: false,
       notification: ''
-    }
-  },
-
-  methods: {
-    async changePassword() {
-      if(document.querySelector('.change-password-input').value !== '') {
-        await fetch('http://localhost:8085/api/auth/password', {
-          method: 'PUT',
-          headers: {
-            "Authorization": this.$auth.getToken('local'),
-            "Content-type": "application/json",
-          },
-          body: document.querySelector('.change-password-input').value.toString()
-        }).then(async response => {
-          if(response.status === 200) {
-            await response.json().then(async response => {
-              setTimeout(() => {
-                window.location.reload();
-              }, 5000);
-              this.notification = await response.message + " Wait please!"
-            })
-          }
-          if(response.status === 400) {
-            await response.json().then(async response => {
-              this.notification = await response.message
-              console.error('Error: Failed update password! Problem: ' + await response.message)
-            })
-          }
-          if(response.status === 500) {
-            console.error('Error: Failed update password! Problem: One of tokens was expired! Trying fetch access token!')
-            await this.updateToken()
-            await this.changePassword()
-          }
-        })
-      } else {
-        this.notification = 'Enter password!'
-      }
-      this.openNotificationModal()
-    },
-
-    openNotificationModal() {
-      this.invalidPasswordModal = true;
     }
   },
 
@@ -123,7 +80,7 @@ export default {
 
   computed: {
     styles() {
-      return [style, footer]
+      return style
     }
   }
 }

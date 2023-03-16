@@ -17,37 +17,26 @@
       </div>
     </main>
 
-    <footer/>
+    <default_footer/>
   </div>
 </template>
 
 <script>
 import style from '/assets/css/main-page.module.css';
-import footer from '/assets/css/global/footer.module.css';
 import Default_header from "./global/header/default_header";
+import Default_footer from "./global/footer/default_footer";
 export default {
-  components: {Default_header},
+  components: {Default_footer, Default_header},
   middleware: 'auth',
-  data() {
-    return {
-
-    }
-  },
-
-  methods: {
-
-  },
 
   async mounted() {
     await this.fetchUser()
-    /*await this.updateToken()*/
   },
 
   computed: {
     styles() {
-      return [style, footer]
+      return style
     }
   }
 }
-
 </script>

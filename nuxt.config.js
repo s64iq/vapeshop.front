@@ -28,7 +28,9 @@ export default {
     {src: '@/plugins/product-filter-methods'},
     {src: '@/plugins/navigation-methods'},
     {src: '@/plugins/order-methods'},
-    {src: '@/plugins/product-page-methods'}
+    {src: '@/plugins/product-page-methods'},
+    {src: '@/plugins/product-page-methods'},
+    {src: '@/plugins/user-safety-methods'}
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

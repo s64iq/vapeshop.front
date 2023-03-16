@@ -103,10 +103,14 @@ Vue.mixin({
           'productType': this.Data.orderList[index].product.type,
           'count': this.Data.orderList[index].count
         })
-      })/*.then(response => {
-        console.log(response.status)
-      })*/
-      window.location.reload();
+      }).then(response => {
+        if(response.status !== 200) {
+          this.fetchUser()
+          this.deleteProduct(index)
+        } else {
+          window.location.reload();
+        }
+      })
     },
   }
 })
